@@ -1,0 +1,15 @@
+spring:
+  profiles:
+    active: test
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  datasource:
+    url: jdbc:postgresql://localhost:5432/test-db
+    username: postgres
+    password: 1823
+    hikari:
+      connection-timeout: 20000
+      maximum-pool-size: 100
+      driver-class-name: org.postgresql.Driver
